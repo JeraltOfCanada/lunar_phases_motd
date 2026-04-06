@@ -1,7 +1,7 @@
 # Lunar Phases MOTD
 ## Goal/Introduction
 The primary goal of this program is to show ASCII art of the current lunar phase in my ubuntu server MOTD. It will also show the name of the phase below, and a countdown to when the next new/full moon is. Eventually I also want it to pull ISS location data from an API and country name/coordinate data from a different API to display which country ISS is currently above, and countdown to when it will be above Edmonton.
-~~ Also maybe Voyager 1/2 distances from earth. ~~ Not as interesting for scope of project. Could find some way to include voyager data in future  
+~~Also maybe Voyager 1/2 distances from earth.~~ Not as interesting for scope of project. Could find some way to include voyager data in future  
 ### Major functions/loops in the code
 Function to calculate remainder using modulo variable. The remainder would be compared to todays current date, and print the countdowns, and the ASCII image.  
 ## Research
