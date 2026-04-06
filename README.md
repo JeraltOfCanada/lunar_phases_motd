@@ -9,8 +9,8 @@ The primary goal of this program is to show ASCII art of the current lunar phase
 Though the original intent of this program is to display in my server MOTD, I'm curious to see what other people can do with it and if anyone else has any different use cases!
 ## Getting started
 ### Dependencies
-* As of now, just requires python3 installed on whatever device you are running the program.
-* As an MOTD, ensure the shebang in line 1, explained in 'Executing Program' section
+- As of now, just requires python3 installed on whatever device you are running the program.
+- As an MOTD, ensure the shebang in line 1, explained in 'Executing Program' section
 ### Installing 
 Just click the green code button above and clone with your preferred method.
 ### Executing Program
@@ -29,13 +29,13 @@ As of now it's pretty simple and I haven't experienced any problems. This is my 
 JeraltOfRivia
 
 ## Version History
-* 0.1
-  * Initial release
+- 0.1
+  - Initial release
  
 ## License
 This project is licenced under the GNU GPLv3 License - See LICENSE.MD file for details when available, until then, its basically just do whatever you want with the code but keep it open source, I want to see what happens to it!
 
 ## Acknowledgements
 Basically, I looked up 'first python projects' a few months ago. I saw a reddit post where someone did something using ASCII showing the lunar phases, but I basically saw a screenshot of their ASCII and the general idea and then I closed the tab. Then when I decided to write this script I just used the general memory of what that person on reddit had done as inspiration. 
-* [README template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
-* [Lunar Phase ASCII](https://www.asciiart.eu/art/43240015b2f2240a) This person only included their signature on one of the phases, I copied it to each phase image so it's always visible when the ASCII is printed. 
+- [README template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+- [Lunar Phase ASCII](https://www.asciiart.eu/art/43240015b2f2240a) This person only included their signature on one of the phases, I copied it to each phase image so it's always visible when the ASCII is printed. 
