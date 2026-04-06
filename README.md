@@ -2,7 +2,7 @@
 This is just a simple program to remind me to get outside and look up at the sky every once and a while, and giving me a cool program to learn python with.
 - THINGS TO NOTE!
 - I have comments in the code that were recommendations of things I can improve, I plan to remove these and add them as issues however I just haven't gotten there yet! Apologies for any confusion.
-- The RESEARCH.md is just the file that I did my initial research in and has my thoughts on how I plan to improve the program!
+- The RESEARCH.md is just the file that I did my initial research in and has my thoughts on how I plan to improve the program! However it is just a dump of my thought process so it might be a tad confusing.
 ## Goal/Introduction
 The primary goal of this program is to show ASCII art of the current lunar phase in my ubuntu server MOTD. It will also show the name of the phase below, and a countdown to when the next new/full moon is. Eventually I also want it to pull International Space Staion (ISS) location data from an API and country name/coordinate data from a different API to display which country ISS is above, and countdown to when it will be above Edmonton. 
 ### Side Note
