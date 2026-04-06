@@ -26,7 +26,7 @@ As of now it's pretty simple and I haven't experienced any problems. This is my 
 - NOTE! If you are trying to run the program in your terminal, but you have the `lunar_phases_motd.py` version, you'll get an error because of the shebang. When using in terminal just use the `lunar_phases.py` version or comment out the shebang. 
 
 ## Authors
-JeraltOfRivia
+[JeraltOfRivia](https://github.com/JeraltOfCanada)
 
 ## Version History
 - 0.1
