@@ -88,7 +88,6 @@ jgs   `'::.-'
 jgs   `':..-'
 """
 }
-# Starting at full moon just reverse string
 
 # boundary points for lunar phase
 """
@@ -107,11 +106,11 @@ phase = lunar_phase()
 # Calculating days to next full/new moon and assigning variable 'cntdwn' & 'cntdwn2'
 cntdwn = math.floor(14.75 - phase)
 cntdwn2 = math.floor(29.5 - phase)
-# make lunar halfpoints a constant
+
 # Assigning variable 'day' for propper grammar
 day = "day" if cntdwn == 1 else "days"
 day2 = "day" if cntdwn2 == 1 else "days"
-# ^create plural function
+
 
 # Remove the # if you want to print the output of the function above
 # Commented out by default because it's unnecessary
@@ -149,10 +148,3 @@ elif 22.125 < phase <= 28.5 :
 else:
     print(phases_dict["NEW MOON"])
     print("Today is the NEW MOON!")
-
-# Add a timer that times from beginning of code to end of code and prints the time
-# for comparison of future versions
-# Write all future versions separatelt to show changes in the code.     
-# Move full/new moon logic to bottom
-# write binary search/bisection for fun
-# variable scoping
