@@ -1,5 +1,3 @@
-
-
 import time 
 import math
 # Calculating where in a 29.5 day lunar phase todays date is
