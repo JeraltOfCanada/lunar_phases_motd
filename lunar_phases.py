@@ -1,14 +1,14 @@
 import time 
 import math
-# Calculating where in a 29.5 day lunar phase todays date is
+# Calculating where in a 29.53 day lunar phase todays date is
 # Defining function 'lunar_phase' and passing 'phase_calculation' into function
 def lunar_phase():
     # Converting time since unix epoch to days, assigning variable 'jd'
     jd = time.time() / 86400 + 2440587.5 
     """
     Subtracting Julian date of last new moon from current JD
-    Last new moon was 2461118.3097222. 
-    Calculating remainder of time since new moon and 29.5 
+    Last new moon was 2461118.3097222 (2026-03-18 19:26:00). 
+    Calculating remainder of time since new moon and 29.53 
     """
     phase_calculation = (jd - 2461118.3097222) % 29.53
     return phase_calculation
