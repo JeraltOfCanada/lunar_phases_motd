@@ -113,7 +113,9 @@ day = "day" if cntdwn == 1 else "days"
 day2 = "day" if cntdwn2 == 1 else "days"
 # ^create plural function
 
-print(phase)
+# Remove the # if you want to print the output of the function above
+# Commented out by default because it's unnecessary
+# print(phase)
 
 # Assigning a physical phase to the calculated date 
 # printing ASCII, phase name, and countdown to next new/full moon
