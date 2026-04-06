@@ -2,15 +2,15 @@
 
 import time 
 import math
-# Calculating where in a 29.5 day lunar phase todays date is
+# Calculating where in a 29.53 day lunar phase todays date is
 # Defining function 'lunar_phase' and passing 'phase_calculation' into function
 def lunar_phase():
     # Converting time since unix epoch to days, assigning variable 'jd'
     jd = time.time() / 86400 + 2440587.5 
     """
     Subtracting Julian date of last new moon from current JD
-    Last new moon was 2461118.3097222. 
-    Calculating remainder of time since new moon and 29.5 
+    New moon date used was 2461118.3097222 (2026-03-18 19:26:00). 
+    Calculating remainder of time since new moon and 29.53 
     """
     phase_calculation = (jd - 2461118.3097222) % 29.53
     return phase_calculation
@@ -90,7 +90,6 @@ jgs   `'::.-'
 jgs   `':..-'
 """
 }
-# Starting at full moon just reverse string
 
 # boundary points for lunar phase
 """
@@ -109,11 +108,9 @@ phase = lunar_phase()
 # Calculating days to next full/new moon and assigning variable 'cntdwn' & 'cntdwn2'
 cntdwn = math.floor(14.75 - phase)
 cntdwn2 = math.floor(29.5 - phase)
-# make lunar halfpoints a constant
 # Assigning variable 'day' for propper grammar
 day = "day" if cntdwn == 1 else "days"
 day2 = "day" if cntdwn2 == 1 else "days"
-# ^create plural function
 
 # Remove the # if you want to print the output of the function above
 # Commented out by default because it's unnecessary
@@ -151,10 +148,3 @@ elif 22.125 < phase <= 28.5 :
 else:
     print(phases_dict["NEW MOON"])
     print("Today is the NEW MOON!")
-
-# Add a timer that times from beginning of code to end of code and prints the time
-# for comparison of future versions
-# Write all future versions separatelt to show changes in the code.     
-# Move full/new moon logic to bottom
-# write binary search/bisection for fun
-# variable scoping
