@@ -31,7 +31,7 @@ As of now it's pretty simple and I haven't experienced any problems. This is my 
   - Initial release
  
 ## License
-This project is licenced under the GNU GPLv3 License - See LICENSE.MD file for details when available, until then, its basically just do whatever you want with the code but keep it open source, I want to see what happens to it!
+This project is licenced under the GNU GPLv3 License - See LICENSE.MD file for details, basically just do whatever you want with the code but keep it open source, I want to see what happens to it!
 
 ## Acknowledgements
 Basically, I looked up 'first python projects' a few months ago. I saw a reddit post where someone did something using ASCII showing the lunar phases, but I basically saw a screenshot of their ASCII and the general idea and then I closed the tab. Then when I decided to write this script I just used the general memory of what that person on reddit had done as inspiration. 
