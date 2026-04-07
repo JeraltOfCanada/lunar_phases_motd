@@ -12,11 +12,10 @@ Though the original intent of this program is to display in my server MOTD, I'm 
 ### Installing 
 Just click the green code button above and clone with your preferred method.
 ### Executing Program
-- For the regular version, just run: `python3 lunar_phases_motd.py` in your terminal and it will output the correct ASCII.
-- If using as an MOTD:
-  1. Ensure the shebang `#!/usr/bin/env python3` in line 1
-  2. Move the script to a directory on your server, I used `scp lunar_phases_motd.py user@ip:/path/to/folder` to copy from my laptop to my server
-  3. Create a symlink into the MOTD directory and assign execute order: `sudo ln -s /path/to/lunar_phases_motd.py /etc/update-motd.d/20-lunar-phases`
+- For the terminal version, just run: `python3 lunar_phases_motd.py` in your terminal and it will output the correct ASCII.
+- If using as an MOTD on Linux server:
+  1. Ensure git is installed with `git --version`, move to the folder you want to clone the repo to, then run `git clone https://github.com/JeraltOfCanada/lunar_phases_motd.git`
+  2. Create a symlink to the MOTD file and assign execute order: `sudo ln -s ~/path/to/lunar_phases_motd.py /etc/update-motd.d/20-lunar-phases`
   4. Ensure original script(not symlink) is an executable `sudo chmod +x ~/path/to/lunar_phases_motd.py`
  
 ## Help
