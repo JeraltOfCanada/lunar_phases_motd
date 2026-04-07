@@ -148,3 +148,10 @@ elif 22.125 < phase <= 28.5 :
 else:
     print(phases_dict["NEW MOON"])
     print("Today is the NEW MOON!")
+
+# Assiging 'qotd' to a changing string asking a question or a quote. 
+# Fill in your own quote/question in the ""
+qotd = ""
+
+# Printing the quote/question of the day
+print(qotd)
