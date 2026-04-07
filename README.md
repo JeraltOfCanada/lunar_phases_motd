@@ -22,7 +22,7 @@ Just click the green code button above and clone with your preferred method.
 As of now it's pretty simple and I haven't experienced any problems. This is my first script and it works without issue for me. If you have any problems, create an issue and let me know! 
 
 ## Authors
-[JeraltOfRivia](https://github.com/JeraltOfCanada)
+[JeraltOfCanada](https://github.com/JeraltOfCanada)
 
 ## Version History
 - 0.1
