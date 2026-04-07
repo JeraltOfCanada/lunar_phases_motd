@@ -31,9 +31,13 @@ As of now it's pretty simple and I haven't experienced any problems. This is my 
   - Initial release
  
 ## License
-This project is licenced under the GNU GPLv3 License - See LICENSE.MD file for details, basically just do whatever you want with the code but keep it open source, I want to see what happens to it!
+This project is licensed under the MIT License - See LICENSE.md file for details.
 
 ## Acknowledgements
 Basically, I looked up 'first python projects' a few months ago. I saw a reddit post where someone did something using ASCII showing the lunar phases, but I basically saw a screenshot of their ASCII and the general idea and then I closed the tab. Then when I decided to write this script I just used the general memory of what that person on reddit had done as inspiration. 
 - [README template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
-- [Lunar Phase ASCII](https://www.asciiart.eu/art/43240015b2f2240a) This person only included their signature on one of the phases, I copied it to each phase image so it's always visible when the ASCII is printed. 
+- [Lunar Phase ASCII](https://www.asciiart.eu/art/43240015b2f2240a) This person only included their signature on one of the phases, I copied it to each phase image so it's always visible when the ASCII is printed.
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+> I'd love to see what you build with this — if you use it in a project, let me know!
