@@ -149,9 +149,8 @@ else:
     print(phases_dict["NEW MOON"])
     print("Today is the NEW MOON!")
 
-# Assiging 'qotd' to a changing string asking a question or a quote. 
-# Fill in your own quote/question in the ""
-qotd = ""
+# Assiging 'qotd' to a changing string asking a question or a quote. s
+qotd = """Your quote/question of the day here"""
 
 # Printing the quote/question of the day
 print(qotd)
