@@ -21,7 +21,6 @@ Just click the green code button above and clone with your preferred method.
  
 ## Help
 As of now it's pretty simple and I haven't experienced any problems. This is my first script and it works without issue for me. If you have any problems, create an issue and let me know! 
-- NOTE! If you are trying to run the program in your terminal, but you have the `lunar_phases_motd.py` version, you'll get an error because of the shebang. When using in terminal just use the `lunar_phases.py` version or comment out the shebang. 
 
 ## Authors
 [JeraltOfRivia](https://github.com/JeraltOfCanada)
