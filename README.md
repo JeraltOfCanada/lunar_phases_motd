@@ -15,8 +15,8 @@ Just click the green code button above and clone with your preferred method.
 - For the regular version, just run: `python3 lunar_phases_motd.py` in your terminal and it will output the correct ASCII.
 - If using as an MOTD:
   1. Ensure the shebang `#!/usr/bin/env python3` in line 1
-  2. Move the script to a directory on your server, I used `scp lunar_phases_motd.py user@ip:~/path/to/folder` to copy from my laptop to my server
-  3. Create a symlink into the MOTD directory and assign execute order: `sudo ln -s ~/path/to/lunar_phases_motd.py /etc/update-motd.d/20-lunar-phases`
+  2. Move the script to a directory on your server, I used `scp lunar_phases_motd.py user@ip:/path/to/folder` to copy from my laptop to my server
+  3. Create a symlink into the MOTD directory and assign execute order: `sudo ln -s /path/to/lunar_phases_motd.py /etc/update-motd.d/20-lunar-phases`
   4. Ensure original script(not symlink) is an executable `sudo chmod +x ~/path/to/lunar_phases_motd.py`
  
 ## Help
