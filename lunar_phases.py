@@ -1,19 +1,20 @@
 import time 
 import math
-# Calculating where in a 29.53 day lunar phase todays date is
-# Defining function 'lunar_phase' and passing 'phase_calculation' into function
+
+SECONDS_IN_DAY = 86400
+JULIAN_DATE_UNIX_EPOCH = 2440587.5
+JULIAN_DATE_MARCH_NEW_MOON = 2461118.3097222
+LUNAR_PHASE_LENGTH = 29.53
+LUNAR_PHASE_HALFPOINT = 14.765
+
 def lunar_phase():
-    # Converting time since unix epoch to days, assigning variable 'jd'
-    jd = time.time() / 86400 + 2440587.5 
-    """
-    Subtracting Julian date of last new moon from current JD
-    Last new moon was 2461118.3097222 (2026-03-18 19:26:00). 
-    Calculating remainder of time since new moon and 29.53 
-    """
-    phase_calculation = (jd - 2461118.3097222) % 29.53
+    current_julian_date = time.time() / SECONDS_IN_DAY + JULIAN_DATE_UNIX_EPOCH 
+    phase_calculation = (current_julian_date - JULIAN_DATE_MARCH_NEW_MOON) % LUNAR_PHASE_LENGTH
+    """Function calculates where today falls inside a lunar phase."""
     return phase_calculation
 
-# Defining lunar phases dictionary for lunar phase ASCII
+phase = lunar_phase()
+
 phases_dict = {
 "NEW MOON" : 
 """
@@ -101,11 +102,9 @@ Waning crescent: 22.125-28.5
 New moon: 28.5-29.5
 """
 
-# Assining output of lunar_phase() function to variable 'phase'
-phase = lunar_phase()
-# Calculating days to next full/new moon and assigning variable 'cntdwn' & 'cntdwn2'
-cntdwn = math.floor(14.75 - phase)
-cntdwn2 = math.floor(29.5 - phase)
+# Calculating days to next full/new moon
+cntdwn = math.floor(LUNAR_PHASE_HALFPOINT - phase)
+cntdwn2 = math.floor(LUNAR_PHASE_LENGTH - phase)
 
 # Assigning variable 'day' for propper grammar
 day = "day" if cntdwn == 1 else "days"
@@ -113,7 +112,6 @@ day2 = "day" if cntdwn2 == 1 else "days"
 
 
 # Remove the # if you want to print the output of the function above
-# Commented out by default because it's unnecessary
 # print(phase)
 
 # Assigning a physical phase to the calculated date 
