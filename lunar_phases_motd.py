@@ -129,7 +129,7 @@ if 0 < phase <= 6.375 :
     print(f"{cntdwn} {day} until next Full Moon")
 elif 6.375 < phase <= 7.375 :
     print(phases_dict["FIRST QUARTER"])
-    print("Today the moon is starting its FIRST QUARTER")
+    print("Today the moon is in its FIRST QUARTER")
     print(f"{cntdwn} {day} until next Full Moon")
 elif 7.375 < phase <= 13.75 :
     print(phases_dict["WAXING GIBBOUS"])
@@ -143,8 +143,8 @@ elif 14.75 < phase <= 21.125 :
     print("Today the moon is a WANING GIBBOUS")
     print(f"{cntdwn2} {day2} until next New Moon")
 elif 21.125 < phase <= 22.125 :
-    print(phases_dict["LAST QUARTER"])
-    print("Today the moon is starting its LAST QUARTER")
+    print(phases_dict["THIRD QUARTER"])
+    print("Today the moon is in its THIRD QUARTER")
     print(f"{cntdwn2} {day2} until next New Moon")
 elif 22.125 < phase <= 28.5 :
     print(phases_dict["WANING CRESCENT"])
