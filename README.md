@@ -37,5 +37,5 @@ Basically, I looked up 'first python projects' a few months ago. I saw a reddit 
 - [Lunar Phase ASCII](https://www.asciiart.eu/art/43240015b2f2240a) This person only included their signature on one of the phases, I copied it to each phase image so it's always visible when the ASCII is printed.
 
 ## Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+Contributions are welcome! Feel free to open an issue or submit a pull request, or just fork it for your own use!
 > I'd love to see what you build with this — if you use it in a project, let me know!
