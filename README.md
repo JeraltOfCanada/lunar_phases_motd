@@ -2,9 +2,11 @@
 This is just a simple program to remind me to get outside and look up at the sky every once and a while, and giving me a cool program to learn python with.
 
 ## Goal/Introduction
-The primary goal of this program is to show ASCII art of the current lunar phase in my ubuntu server MOTD. It will also show the name of the phase below, and a countdown to when the next new/full moon is. Eventually I also want it to pull International Space Station (ISS) location data from an API and country name/coordinate data from a different API to display which country ISS is above, and countdown to when it will be above Edmonton. 
+The primary goal of this program is to show ASCII art of the current lunar phase in my ubuntu server MOTD. It will also show the name of the phase below, and a countdown to when the next new/full moon is. Eventually I also want it to pull International Space Station (ISS) location data and country name/coordinate data from an API to display which country ISS is above, and countdown to when it will be above Edmonton. 
 ### Side Note
-Though the original intent of this program is to display in my server MOTD, I'm curious to see what other people can do with it and if anyone else has any different use cases!
+Though the original intent of this program is to display in my server MOTD, I'm curious to see what other people can do with it and if anyone else has any different use cases! 
+### lunar_phases.py vs lunar_phases_og.py
+Basically lunar_phases_og.py is my original script almost completely unaltered, I just like keeping it here as I continue to develop lunar_phases.py into a more polished version.
 ## Getting started
 ### Dependencies
 - As of now, just requires python3 installed on whatever device you are running the program.
@@ -12,7 +14,7 @@ Though the original intent of this program is to display in my server MOTD, I'm 
 ### Installing 
 Just click the green code button above and clone with your preferred method.
 ### Executing Program
-- For the terminal version, just run: `python3 lunar_phases_motd.py` in your terminal and it will output the correct ASCII.
+- For the terminal version, just run: `python3 lunar_phases.py` in your terminal and it will output the correct ASCII.
 - If using as an MOTD on Linux server:
   1. Ensure git is installed with `git --version`, move to the folder you want to clone the repo to, then run `git clone https://github.com/JeraltOfCanada/lunar_phases_motd.git`
   2. Create a symlink to the MOTD file and assign execute order: `sudo ln -s ~/path/to/lunar_phases_motd.py /etc/update-motd.d/20-lunar-phases`
@@ -25,6 +27,7 @@ As of now it's pretty simple and I haven't experienced any problems. This is my 
 [JeraltOfCanada](https://github.com/JeraltOfCanada)
 
 ## Version History
+Honestly not too sure what goes here. I understand the concept, but this script doesn't really need one yet I'm just using it as a placeholder as I learn!
 - 0.1
   - Initial release
  
