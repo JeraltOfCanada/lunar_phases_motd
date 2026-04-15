@@ -5,15 +5,16 @@ SECONDS_IN_DAY = 86400
 JULIAN_DATE_UNIX_EPOCH = 2440587.5
 JULIAN_DATE_MARCH_NEW_MOON = 2461118.3097222
 LUNAR_PHASE_LENGTH = 29.53
-LUNAR_PHASE_HALFPOINT = 14.765
-NEW_MOON_HIGH = 29.53
-NEW_MOON_LOW = 28.53
-FULL_MOON_HIGH = 14.765
-FULL_MOON_LOW = 13.765
-FIRST_QUARTER_HIGH = 7.3825
-FIRST_QUARTER_LOW = 6.3825
-THIRD_QUARTER_HIGH = 22.1475
-THIRD_QUARTER_LOW = 21.1475
+LUNAR_PHASE_START = 0
+LUNAR_PHASE_HALFPOINT = LUNAR_PHASE_LENGTH / 2
+NEW_MOON_HIGH = LUNAR_PHASE_LENGTH
+NEW_MOON_LOW = NEW_MOON_HIGH - 1
+FULL_MOON_HIGH = LUNAR_PHASE_HALFPOINT
+FULL_MOON_LOW = FULL_MOON_HIGH - 1
+FIRST_QUARTER_HIGH = FULL_MOON_HIGH / 2
+FIRST_QUARTER_LOW = FIRST_QUARTER_HIGH - 1
+THIRD_QUARTER_HIGH = LUNAR_PHASE_LENGTH * 0.75
+THIRD_QUARTER_LOW = THIRD_QUARTER_HIGH - 1
 
 def lunar_phase():
     """Function calculates where today falls inside a lunar phase."""
@@ -42,7 +43,7 @@ new_moon = LunarPhase(NEW_MOON_LOW, NEW_MOON_HIGH, "NEW MOON",
 jgs   `-...-'  
 """)
 
-waxing_crescent = LunarPhase(NEW_MOON_HIGH, FIRST_QUARTER_LOW, "WAXING CRESCENT", 
+waxing_crescent = LunarPhase(LUNAR_PHASE_START, FIRST_QUARTER_LOW, "WAXING CRESCENT", 
 """
        _..._     
      .'   `::.    
@@ -122,11 +123,15 @@ waning_gibbous, third_quarter, waning_crescent]
 if __name__ == "__main__":
 
     phase = lunar_phase()
-   
-    for current_phase in phases:
-        if current_phase.is_active(phase):
-            print(current_phase.art)
-            print(current_phase.name)
+
+    if phase == LUNAR_PHASE_START:
+        print(new_moon.art)
+        print(new_moon.name)
+    else:
+        for current_phase in phases:
+            if current_phase.is_active(phase):
+                print(current_phase.art)
+                print(current_phase.name)
 
 # Calculating days to next full/new moon
     cntdwn = math.floor(LUNAR_PHASE_HALFPOINT - phase)
